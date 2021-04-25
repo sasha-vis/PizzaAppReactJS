@@ -1,0 +1,517 @@
+.header-container,
+.nav-container,
+.main-container,
+.footer-container {
+    width: 70%;
+    max-width: 1008px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+button,
+.logo:hover {
+    cursor: pointer;
+}
+
+#arrowTop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    cursor: pointer;
+    background-image: url('./images/arrow-top.png');
+    background-size: contain;
+    z-index: 20;
+}
+
+.header {
+    padding: 20px;
+    background-color: #fcb800;
+}
+
+.header-wrapper,
+.header-top-center,
+.nav-wrapper,
+.nav-goods {
+    display: flex;
+}
+
+.header-wrapper {
+    justify-content: space-around;
+}
+
+.nav-wrapper,
+.nav-goods {
+    justify-content: space-between;
+}
+
+.header-wrapper {
+    align-items: center;
+}
+
+.header-top-left,
+.header-top-right {
+    color: #fff;
+}
+
+.header-top-left div {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4511;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.header-top-center {
+    flex-direction: column;
+    align-items: center;
+    color: #ff4511;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header-contacts {
+    font-size: 44px;
+    font-weight: 900;
+    text-align: right;
+}
+
+.header-contacts a,
+.footer-contacts a {
+    color: #ff4511;
+    text-decoration: none;
+}
+
+.header-contacts:hover {
+    box-shadow: inset 0 -5px 0 #ff4511;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.header-deliverytime {
+    text-align: right;
+}
+
+.header-deliverytime div {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff4511;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.header .logo {
+    width: 100px;
+}
+
+.nav {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 20px #ededed;
+    z-index: 99;
+}
+
+.nav-wrapper {
+    align-items: center;
+    position: relative;
+}
+
+.nav-goods {
+    width: 80%;
+}
+
+.bg {
+    display: none;
+}
+
+.bg-open {
+    display: block;
+}
+
+.burger-open {
+    display: flex;
+}
+
+.nav-goods li {
+    width: 60px;
+    height: 65px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.nav-goods li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #fcb800;
+    margin-bottom: -2px;
+}
+
+.nav-goods li a {
+    width: 100%;
+    height: 100%;
+    color: #fcb800;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-goods .pizza-ico {
+    background-image: url('./images/pizza-ico.png');
+    background-repeat: no-repeat;
+}
+
+.nav-goods .snack-ico {
+    background-image: url('./images/snack-ico.png');
+    background-repeat: no-repeat;
+}
+
+.nav-goods .dessert-ico {
+    background-image: url('./images/dessert-ico.png');
+    background-repeat: no-repeat;
+}
+
+.nav-goods .drink-ico {
+    background-image: url('./images/drink-ico.png');
+    background-repeat: no-repeat;
+}
+
+.nav-goods .sauce-ico {
+    background-image: url('./images/sauce-ico.png');
+    background-repeat: no-repeat;
+}
+
+.cart-btn {
+    border-radius: 10px;
+    background-color: #ff4511;
+    padding: 10px 20px;
+}
+
+.cart-btn {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cart-btn span {
+    margin-left: 5px;
+    color: #fcb800;
+}
+
+.cart-btn:hover {
+    cursor: pointer;
+}
+
+.burger-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fcb800;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #ff4511;
+    position: relative;
+}
+
+.burger-line::before {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #ff4511;
+    position: absolute;
+    top: -6px;
+}
+
+.burger-line::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #ff4511;
+    position: absolute;
+    top: 6px;
+}
+
+.slick-next,
+.slick-prev {
+    background-color: #333;
+    border: 0;
+    color: #fff;
+    padding: 15px 30px;
+
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    margin-top: 50px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    width: 100%;
+    display: flex;
+    height: 280px;
+}
+
+.slick-track > div {
+    height: 100% !important;
+}
+
+.slick-track div img {
+    width: 100% !important;
+}
+
+.slick-prev {
+    position: absolute;
+    z-index: 99;
+    top: calc(50% - 28px);
+    left: -12%;
+    padding: 11px 0;
+    width: 100px;
+    background-color: #fcb800;
+    border-radius: 5px;
+}
+
+.slick-next {
+    position: absolute;
+    z-index: 99;
+    top: calc(50% - 28px);
+    right: -12%;
+    width: 100px;
+    padding: 11px 0;
+    background-color: #ff4511;
+    border-radius: 5px;
+}
+
+.slick-dots {
+    display: none !important;
+}
+
+.margin-left {
+    margin-left: -100%;
+}
+
+.slider-container .button_next,
+.slider-container .button_prev {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.slider-container .button_next {
+    right: 5%;
+}
+
+.slider-container .button_prev {
+    left: 5%;
+}
+
+.main-pizzas > h3,
+.main-snacks > h3,
+.main-desserts > h3,
+.main-drinks > h3,
+.main-sauces > h3 {
+    color: #ff4511;
+    font-size: 28px;
+    font-style: italic;
+    padding: 40px 0;
+    margin-top: 7%;
+}
+
+.pizzas-goods,
+.snacks-goods,
+.snacks-goods-freetur,
+.snacks-goods-rolls,
+.desserts-goods,
+.drinks-goods,
+.sauces-goods {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-container .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pizzas-goods > .product,
+.snacks-goods > .product,
+.snacks-goods-freetur > .product,
+.snacks-goods-rolls > .product {
+    width: calc(25% - 20px);
+    max-width: 300px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.desserts-goods {
+    justify-content: space-between;
+}
+
+.main .product .add-btn:hover {
+    background-color: #ff4511;
+    color: #fff;
+    transition: 0.15s;
+}
+
+.main .product .at-cart {
+    background-color: #ff4511;
+    color: #fff;
+    cursor: auto;
+}
+
+.desserts-goods > .product {
+    width: calc(30% - 20px);
+    max-width: 400px;
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.snacks-goods-set {
+    overflow: hidden;
+}
+
+.drinks-goods > .product {
+    width: 100px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.sauces-goods > .product {
+    width: 200px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.drinks-goods .add-container,
+.sauces-goods .add-container {
+    flex-direction: column;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.pizzas-goods .product-description .description,
+.snacks-goods .product-description .description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-description > h3 {
+    font-size: 24px;
+}
+
+.product-description > .size-weight {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #7e7e7e;
+    letter-spacing: 0.5px;
+}
+
+.product-description .description {
+    color: #7e7e7e;
+    height: 100%;
+}
+
+.add-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.add-container .cost {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.add-container .add-btn {
+    border-radius: 10px;
+    border: 1px solid #ff4511;
+    padding: 5px 17px;
+    color: #ff4511;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.footer {
+    background-color: #ededed;
+    padding: 60px 0;
+}
+
+.footer-wrapper,
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer-contacts .messangers {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts .messangers a {
+    cursor: pointer;
+}
+
+.footer-wrapper .pay {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper .tel {
+    font-size: 44px;
+    color: #ff4511;
+}
+
+.footer-wrapper .tel:hover {
+    cursor: pointer;
+}
+
