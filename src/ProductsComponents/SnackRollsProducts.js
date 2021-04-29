@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
-import Context from './../context';
+import Context from '../context';
 
 // import image from './images/pizzas/vega.jpg'
 
 const SnackRollProducts = function () {
 
-    const SnackRollProducts = require('./../json/products.json');
+    const SnackRollProducts = require('../json/products.json');
 
     const productArr = Object.values(SnackRollProducts.snacksrolls);
 

@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
-import Context from './../context';
+import Context from '../context';
 
 const DessertProducts = function () {
 
-    const DessertProducts = require('./../json/products.json');
+    const DessertProducts = require('../json/products.json');
 
     const productArr = Object.values(DessertProducts.desserts);
 

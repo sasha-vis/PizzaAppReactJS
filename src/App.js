@@ -70,19 +70,19 @@ const App = function () {
 	};
 
 	const toPizza = function () {
-		document.location.replace(`/#pizzas`);
+		document.location.replace(`${window.location.href}/#pizzas`);
 	};
 	const toSnacks = function () {
-		document.location.replace(`/#snacks`);
+		document.location.replace(`${window.location.href}/#snacks`);
 	};
 	const toDesserts = function () {
-		document.location.replace(`/#desserts`);
+		document.location.replace(`${window.location.href}/#desserts`);
 	};
 	const toDrinks = function () {
-		document.location.replace(`/#drinks`);
+		document.location.replace(`${window.location.href}/#drinks`);
 	};
 	const toSauces = function () {
-		document.location.replace(`/#sauces`);
+		document.location.replace(`${window.location.href}/#sauces`);
 	};
 
 	return (
@@ -111,11 +111,11 @@ const App = function () {
 						<div className="nav-wrapper">
 
 							<ul className="nav-goods">
-								<li className="pizza-ico" onClick={exitBurger, toPizza}><a href="#pizzas"><p>Пиццы</p></a></li>
-								<li className="snack-ico" onClick={exitBurger, toSnacks}><a href="#snacks"><p>Закуски</p></a></li>
-								<li className="dessert-ico" onClick={exitBurger, toDesserts}><a href="#desserts"><p>Десерты</p></a></li>
-								<li className="drink-ico" onClick={exitBurger, toDrinks}><a href="#drinks"><p>Напитки</p></a></li>
-								<li className="sauce-ico" onClick={exitBurger, toSauces}><a href="#sauces"><p>Соусы</p></a></li>
+								<li className="pizza-ico" onClick={exitBurger, toPizza}><a href="/#pizzas"><p>Пиццы</p></a></li>
+								<li className="snack-ico" onClick={exitBurger, toSnacks}><a href="/#snacks"><p>Закуски</p></a></li>
+								<li className="dessert-ico" onClick={exitBurger, toDesserts}><a href="/#desserts"><p>Десерты</p></a></li>
+								<li className="drink-ico" onClick={exitBurger, toDrinks}><a href="/#drinks"><p>Напитки</p></a></li>
+								<li className="sauce-ico" onClick={exitBurger, toSauces}><a href="/#sauces"><p>Соусы</p></a></li>
 								<div className="bg" onClick={exitBurger}></div>
 							</ul>
 
