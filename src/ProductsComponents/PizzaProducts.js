@@ -23,6 +23,8 @@ const PizzaProducts = function () {
         if (cartArr.pizzas.indexOf(li.dataset.id) === -1) {
             cartArr.pizzas.push(li.dataset.id);
 
+            console.log(cartArr)
+
             let cartStr = JSON.stringify(cartArr);
             localStorage.setItem('cart', cartStr);
 
