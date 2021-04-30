@@ -22,7 +22,11 @@ function Cart() {
         popup.classList.remove('popup-open');
     };
 
-    const sbmtAlrt = function () {
+    const sbmtAlrt = function (e) {
+        e.preventDefault();
+        
+        // code
+
         exitPopup();
         alert('Спасибо за ваш заказ. Оператор свяжется с вами в ближайшее время')
         setCart('')
@@ -51,7 +55,7 @@ function Cart() {
                 <div className="order-popup">
                     <div className="popup-container">
                         <h3>Куда доставить?</h3>
-                        <form className="form-container">
+                        <form method="post" className="form-container">
                             <div className="input-wrapper lg-2">
                                 <input className="form-input" type="text" name="Имя" placeholder="Ваше имя"></input>
                             </div>
@@ -105,7 +109,7 @@ function Cart() {
                             </div>
                             <button className="confirm-btn" type="submit" onClick={sbmtAlrt}>Подтвердить заказ</button>
                         </form>
-                        <button className="form-close-btn" onClick={exitPopup}>
+                        <button className="form-close-btn" type="button" onClick={exitPopup}>
                             <i></i>
                         </button>
                     </div>

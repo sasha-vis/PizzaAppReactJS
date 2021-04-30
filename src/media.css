@@ -166,7 +166,7 @@
         padding: 5% !important;
         width: 40% !important;
         height: 100% !important;
-        justify-content: start !important;
+        justify-content: flex-start !important;
         z-index: 2 !important;
         display: flex !important;
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PizzaProducts from './ProductsComponents/PizzaProducts';
+import PizzaProducts from './ProductsComponents/PizzaProducts.js';
 import SnackProducts from './ProductsComponents/SnackProducts';
 import SnackSetProducts from './ProductsComponents/SnackSetProducts';
 import SnackFreeturProducts from './ProductsComponents/SnackFreeturProducts';

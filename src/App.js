@@ -69,21 +69,21 @@ const App = function () {
 		window.scrollTo(0, 0);
 	};
 
-	const toPizza = function () {
-		document.location.replace(`${window.location.href}/#pizzas`);
-	};
-	const toSnacks = function () {
-		document.location.replace(`${window.location.href}/#snacks`);
-	};
-	const toDesserts = function () {
-		document.location.replace(`${window.location.href}/#desserts`);
-	};
-	const toDrinks = function () {
-		document.location.replace(`${window.location.href}/#drinks`);
-	};
-	const toSauces = function () {
-		document.location.replace(`${window.location.href}/#sauces`);
-	};
+	// const toPizza = function () {
+	// 	document.location.replace(`${window.location.href}/#pizzas`);
+	// };
+	// const toSnacks = function () {
+	// 	document.location.replace(`${window.location.href}/#snacks`);
+	// };
+	// const toDesserts = function () {
+	// 	document.location.replace(`${window.location.href}/#desserts`);
+	// };
+	// const toDrinks = function () {
+	// 	document.location.replace(`${window.location.href}/#drinks`);
+	// };
+	// const toSauces = function () {
+	// 	document.location.replace(`${window.location.href}/#sauces`);
+	// };
 
 	return (
 		<BrowserRouter>
@@ -95,7 +95,7 @@ const App = function () {
 
 							<div className="header-top-left">Доставка пиццы<div>бесплатно</div></div>
 
-							<div className="header-top-center"><a href="/"><img className='logo' src={logo}></img></a>Пицца Феникс</div>
+							<div className="header-top-center"><a href="/"><img className='logo' src={logo} alt="#" /></a>Пицца Феникс</div>
 
 							<div className="header-top-right">
 								<div className="header-contacts"><a href="tel:+375293776020">377-60-20</a></div>
@@ -111,11 +111,17 @@ const App = function () {
 						<div className="nav-wrapper">
 
 							<ul className="nav-goods">
-								<li className="pizza-ico" onClick={exitBurger, toPizza}><a href="/#pizzas"><p>Пиццы</p></a></li>
+								{/* <li className="pizza-ico" onClick={exitBurger, toPizza}><a href="/#pizzas"><p>Пиццы</p></a></li> */}
+								{/* <li className="pizza-ico"><a href="/#pizzas"><p>Пиццы</p></a></li>
 								<li className="snack-ico" onClick={exitBurger, toSnacks}><a href="/#snacks"><p>Закуски</p></a></li>
 								<li className="dessert-ico" onClick={exitBurger, toDesserts}><a href="/#desserts"><p>Десерты</p></a></li>
 								<li className="drink-ico" onClick={exitBurger, toDrinks}><a href="/#drinks"><p>Напитки</p></a></li>
-								<li className="sauce-ico" onClick={exitBurger, toSauces}><a href="/#sauces"><p>Соусы</p></a></li>
+								<li className="sauce-ico" onClick={exitBurger, toSauces}><a href="/#sauces"><p>Соусы</p></a></li> */}
+								<li className="pizza-ico"><a onClick={exitBurger} href="/#pizzas"><p>Пиццы</p></a></li>
+								<li className="snack-ico"><a onClick={exitBurger} href="/#snacks"><p>Закуски</p></a></li>
+								<li className="dessert-ico"><a onClick={exitBurger} href="/#desserts"><p>Десерты</p></a></li>
+								<li className="drink-ico"><a onClick={exitBurger} href="/#drinks"><p>Напитки</p></a></li>
+								<li className="sauce-ico"><a onClick={exitBurger} href="/#sauces"><p>Соусы</p></a></li>
 								<div className="bg" onClick={exitBurger}></div>
 							</ul>
 
@@ -134,27 +140,28 @@ const App = function () {
 					<Route path='/cart' component={Cart} />
 					<div id="arrowTop" onClick={scroll}></div>
 				</main>
+				
 				<footer className="footer">
 					<div className="footer-container">
 						<div className="footer-wrapper">
 							<div className="logo"><a href="/"><img src={logo}/></a></div>
 							<div className="footer-contacts">
 								<div className="messangers">
-									<a href="https://www.instagram.com"><img src={images.contacts.inst}/></a>
-									<a href="https://www.vkontakte.ru"><img src={images.contacts.vkon}/></a>
+									<a href="https://www.instagram.com"><img src={images.contacts.inst} alt="#"/></a>
+									<a href="https://www.vkontakte.ru"><img src={images.contacts.vkon} alt="#"/></a>
 								</div>
 								<div className="pay">
-									<img src={images.pay.belcard}/>
-									<img src={images.pay.bePaid}/>
-									<img src={images.pay.cartaPokupok}/>
-									<img src={images.pay.fun}/>
-									<img src={images.pay.halva}/>
-									<img src={images.pay.maestro}/>
-									<img src={images.pay.magnit}/>
-									<img src={images.pay.masterCard}/>
-									<img src={images.pay.masterCardSecur}/>
-									<img src={images.pay.verVisa}/>
-									<img src={images.pay.visa}/>
+									<img src={images.pay.belcard} alt="#"/>
+									<img src={images.pay.bePaid} alt="#"/>
+									<img src={images.pay.cartaPokupok} alt="#"/>
+									<img src={images.pay.fun} alt="#"/>
+									<img src={images.pay.halva} alt="#"/>
+									<img src={images.pay.maestro} alt="#"/>
+									<img src={images.pay.magnit} alt="#"/>
+									<img src={images.pay.masterCard} alt="#"/>
+									<img src={images.pay.masterCardSecur} alt="#"/>
+									<img src={images.pay.verVisa} alt="#"/>
+									<img src={images.pay.visa} alt="#"/>
 								</div>
 								<div className="tel"><a href="tel:+375293776020">+375 29 377-60-20</a></div>
 							</div>
