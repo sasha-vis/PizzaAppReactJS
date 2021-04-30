@@ -1,23 +1,23 @@
 {
     "contacts": {
-        "inst": "/images/contacts/instagram.png",
-        "vkon": "/images/contacts/vkontakte.png"
+        "inst": "/PizzaAppReactJS/images/contacts/instagram.png",
+        "vkon": "/PizzaAppReactJS/images/contacts/vkontakte.png"
     },
     "pay": {
-        "belcard": "/images/pay/belcard.png",
-        "bePaid": "/images/pay/bePaid.png",
-        "cartaPokupok": "/images/pay/cartaPokupok.png",
-        "fun": "/images/pay/fun.jpg",
-        "halva": "/images/pay/halva.png",
-        "maestro": "/images/pay/maestro.png",
-        "magnit": "/images/pay/magnit.png",
-        "masterCard": "/images/pay/masterCard.png",
-        "masterCardSecur": "/images/pay/masterCardSecur.png",
-        "verVisa": "/images/pay/verVisa.png",
-        "visa": "/images/pay/visa.png"
+        "belcard": "/PizzaAppReactJS/images/pay/belcard.png",
+        "bePaid": "/PizzaAppReactJS/images/pay/bePaid.png",
+        "cartaPokupok": "/PizzaAppReactJS/images/pay/cartaPokupok.png",
+        "fun": "/PizzaAppReactJS/images/pay/fun.jpg",
+        "halva": "/PizzaAppReactJS/images/pay/halva.png",
+        "maestro": "/PizzaAppReactJS/images/pay/maestro.png",
+        "magnit": "/PizzaAppReactJS/images/pay/magnit.png",
+        "masterCard": "/PizzaAppReactJS/images/pay/masterCard.png",
+        "masterCardSecur": "/PizzaAppReactJS/images/pay/masterCardSecur.png",
+        "verVisa": "/PizzaAppReactJS/images/pay/verVisa.png",
+        "visa": "/PizzaAppReactJS/images/pay/visa.png"
     },
     "slides": {
-        "slide1": "/images/slider/slide1.jpg",
-        "slide2": "/images/slider/slide2.jpg"
+        "slide1": "/PizzaAppReactJS/images/slider/slide1.jpg",
+        "slide2": "/PizzaAppReactJS/images/slider/slide2.jpg"
     }
 }
