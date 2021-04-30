@@ -95,7 +95,7 @@ const App = function () {
 
 							<div className="header-top-left">Доставка пиццы<div>бесплатно</div></div>
 
-							<div className="header-top-center"><a href="/"><img className='logo' src={logo} alt="#" /></a>Пицца Феникс</div>
+							<div className="header-top-center"><a href="/PizzaAppReactJS/"><img className='logo' src={logo} alt="#" /></a>Пицца Феникс</div>
 
 							<div className="header-top-right">
 								<div className="header-contacts"><a href="tel:+375293776020">377-60-20</a></div>
@@ -117,15 +117,15 @@ const App = function () {
 								<li className="dessert-ico" onClick={exitBurger, toDesserts}><a href="/#desserts"><p>Десерты</p></a></li>
 								<li className="drink-ico" onClick={exitBurger, toDrinks}><a href="/#drinks"><p>Напитки</p></a></li>
 								<li className="sauce-ico" onClick={exitBurger, toSauces}><a href="/#sauces"><p>Соусы</p></a></li> */}
-								<li className="pizza-ico"><a onClick={exitBurger} href="/#pizzas"><p>Пиццы</p></a></li>
-								<li className="snack-ico"><a onClick={exitBurger} href="/#snacks"><p>Закуски</p></a></li>
-								<li className="dessert-ico"><a onClick={exitBurger} href="/#desserts"><p>Десерты</p></a></li>
-								<li className="drink-ico"><a onClick={exitBurger} href="/#drinks"><p>Напитки</p></a></li>
-								<li className="sauce-ico"><a onClick={exitBurger} href="/#sauces"><p>Соусы</p></a></li>
+								<li className="pizza-ico"><a onClick={exitBurger} href="/PizzaAppReactJS/#pizzas"><p>Пиццы</p></a></li>
+								<li className="snack-ico"><a onClick={exitBurger} href="/PizzaAppReactJS/#snacks"><p>Закуски</p></a></li>
+								<li className="dessert-ico"><a onClick={exitBurger} href="/PizzaAppReactJS/#desserts"><p>Десерты</p></a></li>
+								<li className="drink-ico"><a onClick={exitBurger} href="/PizzaAppReactJS/#drinks"><p>Напитки</p></a></li>
+								<li className="sauce-ico"><a onClick={exitBurger} href="/PizzaAppReactJS/#sauces"><p>Соусы</p></a></li>
 								<div className="bg" onClick={exitBurger}></div>
 							</ul>
 
-							<NavLink to='/cart' onClick={scroll} className="cart-btn">Корзина<span>{cartAmount}</span></NavLink>
+							<NavLink to='/PizzaAppReactJS/cart' onClick={scroll} className="cart-btn">Корзина<span>{cartAmount}</span></NavLink>
 
 							<div className="burger-btn" onClick={openBurger}>
 								<div className="burger-line"></div>
@@ -136,8 +136,8 @@ const App = function () {
 				</nav>
 
 				<main className="main">
-					<Route exact path='/' component={Catalog} />
-					<Route path='/cart' component={Cart} />
+					<Route exact path='/PizzaAppReactJS/' component={Catalog} />
+					<Route path='/PizzaAppReactJS/cart' component={Cart} />
 					<div id="arrowTop" onClick={scroll}></div>
 				</main>
 				
